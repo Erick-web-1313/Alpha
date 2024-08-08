@@ -1,0 +1,28 @@
+.col-md-4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.col-md-4 span {
+    font-weight: bold;
+    color: #333;
+}
+
+.col-md-4 p {
+    margin: 0;
+    font-weight: normal;
+    color: #555;
+    text-align: right;
+}
+
+.col-md-7 {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-top: 2%;
+}
+

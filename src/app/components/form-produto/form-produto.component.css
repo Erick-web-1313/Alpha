@@ -1,0 +1,33 @@
+.ajs-input {
+    width: 300px;
+    background-color: #dadada;
+    height: 53px;
+    border-radius: 5px;
+}
+.full-screen-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vw;
+    width: 50vw;
+    margin: auto;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px; 
+}
+
+.full-screen-form .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.ajs-header{
+    margin-top: 3%;
+}
+.ajs-btn{
+ background-color: rgb(196, 239, 196);
+}
+.ajs-btn:hover {
+ background-color: rgb(121, 190, 121);
+}

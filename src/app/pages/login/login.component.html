@@ -1,0 +1,45 @@
+<section class="login-section" style="overflow: hidden;">
+    <div class="row m-0">
+        <div class="col-lg-4 d-lg-inline-block d-none p-0">
+            <div>
+                <img src="#" data-aos="fade-up" data-aos-duration="100" data-aos-delay="100"
+                    class="img-fluid img-base" alt="">
+                <img src="#" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-delay="1000" class="img-fluid img-light" alt="">
+                <div class="img-face" data-aos-delay="1000" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"><img style="width: 200px; margin-left: 25px;" src="/assets/logoAlpha.png"> </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-lg-5 ms-auto p-0 ajs-form">
+            <div class="login-box">
+                <div style="width: 380px;">
+                    <h2>Bem vindo a <span>T-Alpha!</span></h2>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel"
+                            aria-labelledby="login-tab" tabindex="0">
+                            <form [formGroup]="formulario" class="auth-form">
+                                <div class="mb-3 form-group">
+                                    <label class="form-label">Usuário</label>
+                                    <input placeholder="Digite o usuário" class="form-control" formControlName="usuario">
+                                    <div *ngIf="formulario.get('usuario')?.invalid && formulario.get('usuario')?.touched">
+                                      <small class="text-danger">Usuário é obrigatório.</small>
+                                    </div>
+                                  </div>
+                                  <div class="mb-2 form-group">
+                                    <label class="form-label">Senha</label>
+                                    <input placeholder="Digite a senha" type="password" class="form-control" formControlName="senha">
+                                    <div *ngIf="formulario.get('senha')?.invalid && formulario.get('senha')?.touched">
+                                      <small class="text-danger">Senha é obrigatória.</small>
+                                    </div>
+                                  </div>
+                                  <button class="btn w-100 text-center mt-3 btn-login" (click)="autenticar()">Login</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

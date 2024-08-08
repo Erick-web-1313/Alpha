@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+      <div data-aos-delay="1000" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+        <img style="width: 200px; margin-left: 25px;" src="/assets/logoAlpha.png">
+      </div>
+      <div class="col-md-7">
+        <h1>Detalhe do Produto</h1>
+        <div class="col-md-4">
+          <span>ID:</span>
+          <p>{{ produto?.id }}</p>
+        </div>
+        <div class="col-md-4">
+          <span>Nome:</span>
+          <p>{{ produto?.name }}</p>
+        </div>
+        <div class="col-md-4">
+          <span>Descrição:</span>
+          <p>{{ produto?.description }}</p>
+        </div>
+        <div class="col-md-4">
+          <span>Preço:</span>
+          <p>{{ produto?.price | currency:'BRL':'symbol':'1.2-2' }}</p>
+        </div>
+        <div class="col-md-4">
+          <span>Estoque:</span>
+          <p>{{ produto?.stock }}</p>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-voltar" (click)="voltar()">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

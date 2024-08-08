@@ -1,0 +1,40 @@
+.ajs-top {
+  margin-top: 2%;
+}
+
+.ajs-input {
+  width: 80%;
+}
+
+.btn-sair {
+  background-color: rgb(255, 167, 167);
+  margin-left: 80%;
+}
+
+.btn-sair:hover {
+  background-color: rgb(255, 149, 149);
+  color: white;
+}
+
+.full-screen-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 25%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.btn-confirmar {
+  margin-left: 5px;
+  background-color: rgb(255, 164, 164);
+}
+.btn-confirmar:hover{
+  background-color: rgb(245, 94, 94);
+  color: white;
+}

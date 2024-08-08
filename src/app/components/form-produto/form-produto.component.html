@@ -1,0 +1,53 @@
+<div class="container" style="height: 500px;">
+    <div class="row ajs-header">
+        <div class="col-md-10">
+            <h1 *ngIf="data; else cadastrar">Atualizar Produtos</h1>
+            <ng-template #cadastrar>
+                <h1>Cadastrar Produtos</h1>
+            </ng-template>
+        </div>
+        <div class="col-md-2">
+            <button class="btn" (click)="fechar()">Fechar</button>
+        </div>
+    </div>
+    <form [formGroup]="formulario" class="full-screen-form">
+        <div class="row">
+            <div class="col-md-4">
+                <mat-form-field class="d-none">
+                    <input matInput formControlName="id">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input matInput formControlName="nome">
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <mat-form-field>
+                    <mat-label>Descrição</mat-label>
+                    <input matInput formControlName="descricao">
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <mat-form-field>
+                    <mat-label>Preço</mat-label>
+                    <input matInput formControlName="preco">
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <mat-form-field>
+                    <mat-label>Estoque</mat-label>
+                    <input matInput formControlName="estoque">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+                <button class="btn ajs-btn" *ngIf="!data" (click)="adicionar()">Adicionar Produto</button>
+                <button class="btn ajs-btn" *ngIf="data" (click)="atualizar()">Atualizar Produto</button>
+            </div>
+        </div>
+    </form>
+</div>

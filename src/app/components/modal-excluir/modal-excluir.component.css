@@ -1,0 +1,47 @@
+.full-screen-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 11vw;
+    width: 30vw;
+    margin: auto;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px; 
+}
+
+.full-screen-form .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.row, .col-md-12 {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+@media (max-width: 767px) {
+    .row, .col-md-12 {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+        height: 250px;
+        width: 310px;
+    }
+}
+.btn-excluir {
+    background-color: rgb(250, 121, 121);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-excluir:hover {
+    background-color: rgb(255, 85, 85);
+}
+
+
